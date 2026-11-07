@@ -25,8 +25,9 @@ Elektrik dağıtım şebekelerinde işletme gerilimi altında **Online Kısmi De
 
 ---
 
-## 👥 Kurucular
+## 👥 Ekibimiz
 
+### Kurucular
 - **Prof. Dr. Mehmet Hakan Hocaoğlu** (Kurucu Ortak & Baş Danışman)  
   *İstanbul Ticaret Üniversitesi Mühendislik Fakültesi Eski Dekanı (2022-2025)*  
   [AVESİS Profili](https://avesis.ticaret.edu.tr/mhhocaoglu) · [Google Scholar](https://scholar.google.com/citations?user=C_jAdtEAAAAJ&hl=en)
@@ -34,6 +35,13 @@ Elektrik dağıtım şebekelerinde işletme gerilimi altında **Online Kısmi De
 - **Dr. Mert Bekir Atsever** (Kurucu Ortak & Ar-Ge Direktörü)  
   *Güç Sistemleri & Yapay Zeka Araştırmacısı*  
   [Google Scholar](https://scholar.google.com/citations?user=Ta8oPpgAAAAJ&hl=tr) · [YÖK Akademik](https://akademik.yok.gov.tr/AkademikArama/view/viewAuthor.jsp)
+
+### Araştırma Ekibi
+- **Toprak KÖSE** (Araştırma Ekibi & Ar-Ge Mühendisi)  
+  [LinkedIn Profili](https://www.linkedin.com/in/toprak-alp-k%C3%B6se-618918198/)
+
+- **Mehmet KÖSE** (Araştırma Ekibi & Yazılım Ar-Ge Mühendisi)  
+  [LinkedIn Profili](https://www.linkedin.com/in/mehmet-k%C3%B6se-74067a202/)
 
 ---
 
