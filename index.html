@@ -46,7 +46,6 @@
 
       <ul class="nav-menu" id="navMenu">
         <li><a href="#cozumler" class="nav-link">Çözümlerimiz</a></li>
-        <li><a href="#simulasyon" class="nav-link">Arıza Simülatörü</a></li>
         <li><a href="#hakkimizda" class="nav-link">Kurucular</a></li>
         <li><a href="#basinda-biz" class="nav-link">Basında Biz</a></li>
         <li><a href="#iletisim" class="nav-cta-btn">İletişime Geç</a></li>
@@ -354,87 +353,7 @@
     </div>
   </section>
 
-  <!-- ========================================================================
-       İNTERAKTİF SİMÜLATÖR (MÜHENDİSLİK GÖSTERİMİ)
-       ======================================================================== -->
-  <section class="section section-bg-dark" id="simulasyon">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag light">İnteraktif Simülatör</span>
-        <h2 class="section-title">TRACE Algoritması ve Mesafe Tahmin Modeli</h2>
-        <p class="section-subtitle">
-          Şebeke parametrelerini değiştirerek özgün arıza konumu hesaplama hassasiyetimizi canlı deneyimleyin.
-        </p>
-      </div>
 
-      <div class="simulator-box">
-        <div class="sim-controls">
-          <div class="sim-group">
-            <label class="sim-label" for="simFeederLength">
-              <span>Fider Toplam Hat Uzunluğu:</span>
-              <span class="sim-val" id="simFeederLengthVal">31 km</span>
-            </label>
-            <input type="range" id="simFeederLength" class="sim-range" min="5" max="60" step="1" value="31">
-          </div>
-
-          <div class="sim-group">
-            <label class="sim-label" for="simFaultType">
-              <span>Arıza Tipi:</span>
-            </label>
-            <select id="simFaultType" class="sim-select">
-              <option value="single-phase">Tek Faz - Toprak Arızası (En Yaygın)</option>
-              <option value="phase-phase">Faz - Faz Arızası</option>
-              <option value="transient">Geçici Ark / Kuş Teması</option>
-            </select>
-          </div>
-
-          <div class="sim-group">
-            <label class="sim-label" for="simNoiseLevel">
-              <span>Şebeke Gürültü / Dengesizlik Oranı:</span>
-              <span class="sim-val" id="simNoiseLevelVal">%5</span>
-            </label>
-            <input type="range" id="simNoiseLevel" class="sim-range" min="1" max="20" step="1" value="5">
-          </div>
-
-          <p style="font-size: 0.82rem; color: #94a3b8; line-height: 1.5; margin-top: 0.5rem;">
-            * Hesaplamalar, rölelerin negatif sıra empedans matrisleri ve dal-budak şebeke topoğrafyası esas alınarak anlık koşturulur.
-          </p>
-        </div>
-
-        <div class="sim-display">
-          <div>
-            <div class="sim-display-header">
-              <span style="font-size: 0.85rem; font-family: var(--font-mono); color: #94a3b8;">ALGORİTMA DURUMU: COMTRADE AKTİF</span>
-              <div class="sim-status-indicator">
-                <span class="status-beacon"></span>
-                <span>Canlı Analiz</span>
-              </div>
-            </div>
-
-            <div class="sim-result-grid">
-              <div class="sim-result-card">
-                <div class="sim-result-label">Tahmini Arıza Noktası</div>
-                <div class="sim-result-value" id="simCalcDistance">21.08 km</div>
-              </div>
-              <div class="sim-result-card">
-                <div class="sim-result-label">Algoritma Güven Skoru</div>
-                <div class="sim-result-value" id="simCalcAccuracy">%99.4</div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div style="font-size: 0.75rem; color: #94a3b8; margin-bottom: 0.4rem; font-family: var(--font-mono);">
-              DALGA FORMU &amp; TEKİL HATA İMPULSU (TRACE)
-            </div>
-            <div class="sim-graph-canvas" id="simGraph">
-              <!-- JS ile dinamik çizilir -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- ========================================================================
        KURUCULAR VE AKADEMİK DANIŞMANLIK
@@ -693,7 +612,6 @@
             <li><a href="#cozumler">Online PD Cihazı</a></li>
             <li><a href="#cozumler">Havai Hat Arıza Yazılımı</a></li>
             <li><a href="#cozumler">Online Tan(δ)-AI Yazılımı</a></li>
-            <li><a href="#simulasyon">TRACE Arıza Simülatörü</a></li>
           </ul>
         </div>
 
