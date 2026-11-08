@@ -68,34 +68,4 @@ document.addEventListener('DOMContentLoaded', () => {
       closeModal();
     }
   });
-
-  // 3. Contact Form Handling
-  const contactForm = document.getElementById('contactForm');
-  const formSuccessAlert = document.getElementById('formSuccessAlert');
-
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const submitBtn = contactForm.querySelector('button[type="submit"]');
-      const originalText = submitBtn.innerHTML;
-      
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = 'Gönderiliyor...';
-
-      setTimeout(() => {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalText;
-        contactForm.reset();
-        
-        if (formSuccessAlert) {
-          formSuccessAlert.style.display = 'block';
-          setTimeout(() => {
-            formSuccessAlert.style.display = 'none';
-          }, 6000);
-        } else {
-          alert('Mesajınız başarıyla alındı! Hocaoğlu Güç Sistemleri ekibi en kısa sürede sizinle iletişime geçecektir.');
-        }
-      }, 700);
-    });
-  }
 });
