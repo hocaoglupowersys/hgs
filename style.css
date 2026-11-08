@@ -1554,6 +1554,424 @@ button {
 }
 
 /* ==========================================================================
+   HERO VALUE PILLARS & HARD EVIDENCE STRIP (V2 KURUMSAL VİZYON)
+   ========================================================================== */
+.hero-value-pillars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin: 1.75rem 0 2.25rem;
+}
+
+.hero-pillar-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  background: rgba(15, 34, 61, 0.72);
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  border-radius: var(--radius-lg);
+  padding: 0.95rem 1.15rem;
+  backdrop-filter: blur(8px);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.hero-pillar-item:hover {
+  transform: translateX(4px);
+  border-color: rgba(56, 189, 248, 0.55);
+  background: rgba(15, 34, 61, 0.9);
+}
+
+.pillar-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.pillar-cyan {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.pillar-emerald {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.pillar-amber {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.pillar-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.pillar-text strong {
+  color: #ffffff;
+  font-size: 0.96rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.pillar-text span {
+  color: #cbd5e1;
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+/* Evidence Strip */
+.evidence-strip {
+  margin-top: 3.5rem;
+  padding: 1.5rem 2rem;
+  background: rgba(15, 29, 51, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.4);
+}
+
+.evidence-badge-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.evidence-number {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #38bdf8;
+  letter-spacing: -0.02em;
+  font-family: var(--font-mono);
+}
+
+.evidence-label {
+  font-size: 0.82rem;
+  color: #cbd5e1;
+  line-height: 1.4;
+}
+
+.evidence-divider {
+  width: 1px;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.12);
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   İLERİ MÜHENDİSLİK, YETENEKLER VE AR-GE BÖLÜMÜ (DEEP-TECH DARK SECTION)
+   ========================================================================== */
+.section-dark-rd {
+  background: linear-gradient(180deg, #071120 0%, #0b1a30 50%, #091526 100%);
+  color: #f8fafc;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(56, 189, 248, 0.15);
+  border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+}
+
+.section-header-dark .tag-glow {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-slate-300 {
+  color: #cbd5e1 !important;
+}
+
+/* 3 Sütunlu Kurumsal Değer Taahhüdü */
+.rd-impact-banner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.rd-impact-card {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.14) 0%, rgba(15, 23, 42, 0.85) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: var(--radius-xl);
+  padding: 1.75rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1rem;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.35);
+  transition: transform var(--transition-normal), border-color var(--transition-normal);
+}
+
+.rd-impact-card:hover {
+  transform: translateY(-4px);
+  border-color: #38bdf8;
+}
+
+.rd-impact-num {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.rd-impact-body h4 {
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.45rem;
+  line-height: 1.35;
+}
+
+.rd-impact-body p {
+  color: #cbd5e1;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* 6 Ana Yetkinlik Kartı Grid */
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-bottom: 3.5rem;
+}
+
+.capability-card {
+  background: rgba(15, 29, 52, 0.78);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-normal), border-color var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.capability-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(56, 189, 248, 0.55);
+  box-shadow: 0 20px 35px -12px rgba(2, 132, 199, 0.25);
+  background: rgba(17, 34, 62, 0.95);
+}
+
+.cap-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.cap-icon-box {
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius-lg);
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cap-standard-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.28);
+  padding: 0.3rem 0.65rem;
+  border-radius: var(--radius-full);
+  text-align: right;
+}
+
+.cap-title {
+  color: #ffffff;
+  font-size: 1.18rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 0.9rem;
+}
+
+.cap-problem {
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  background: rgba(7, 17, 32, 0.55);
+  border-left: 3px solid #38bdf8;
+  padding: 0.75rem 0.9rem;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  margin-bottom: 1.15rem;
+}
+
+.cap-problem strong {
+  color: #38bdf8;
+}
+
+.cap-tech-list {
+  list-style: none;
+  padding: 0;
+  margin: auto 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.cap-tech-list li {
+  font-size: 0.85rem;
+  color: #e2e8f0;
+  line-height: 1.45;
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.cap-tech-list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #38bdf8;
+  font-weight: 700;
+}
+
+/* Ar-Ge Matris Kutusu */
+.rd-matrix-box {
+  background: rgba(15, 29, 52, 0.9);
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
+}
+
+.rd-matrix-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-bottom: 1.75rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.rd-matrix-tag {
+  display: inline-block;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #38bdf8;
+  margin-bottom: 0.35rem;
+}
+
+.rd-matrix-header h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.rd-matrix-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.rd-matrix-col {
+  background: rgba(7, 17, 32, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.matrix-col-badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 1.25rem;
+}
+
+.badge-completed {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.badge-ongoing {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.badge-advisory {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.matrix-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.matrix-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.matrix-list li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.matrix-list li strong {
+  color: #f8fafc;
+  font-size: 0.94rem;
+  font-weight: 700;
+}
+
+.matrix-list li span {
+  color: #94a3b8;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+/* ==========================================================================
    FOOTER
    ========================================================================== */
 .site-footer {
@@ -1714,15 +2132,28 @@ button {
     border-top: 1px solid var(--neutral-200);
   }
   
-  
   .footer-top {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
   
   .project-features-grid,
-  .approved-highlights-grid {
+  .approved-highlights-grid,
+  .capabilities-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rd-impact-banner,
+  .rd-matrix-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .evidence-strip {
+    flex-wrap: wrap;
+  }
+
+  .evidence-divider {
+    display: none;
   }
 }
 
@@ -1775,12 +2206,19 @@ button {
   
   .project-features-grid,
   .project-screenshots-grid,
-  .approved-highlights-grid {
+  .approved-highlights-grid,
+  .capabilities-grid {
     grid-template-columns: 1fr;
   }
   
-  .project-gallery-box {
+  .project-gallery-box,
+  .rd-matrix-box {
     padding: 1.25rem;
+  }
+
+  .rd-matrix-header {
+    flex-direction: column;
+    align-items: flex-start;
   }
   
   .founders-grid,
