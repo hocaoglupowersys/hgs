@@ -1196,6 +1196,17 @@ button {
   word-break: break-word;
 }
 
+.contact-email-link {
+  color: var(--primary-900);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.contact-email-link:hover {
+  color: var(--accent-cyan);
+  text-decoration: underline;
+}
+
 .contact-channel-desc {
   font-size: 0.95rem;
   color: var(--neutral-600);
